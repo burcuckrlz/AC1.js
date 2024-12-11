@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Avanzada</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="mensaje" readonly placeholder="0">
+        </div>
+        <div class="buttons">
+            <button class="btn memory">MC</button>
+            <button class="btn memory">MR</button>
+            <button class="btn memory">M+</button>
+            <button class="btn memory">M-</button>
+            <button class="btn memory">MS</button>
+
+            <button class="btn func">√</button>
+            <button class="btn func">x²</button>
+            <button class="btn func">1/x</button>
+            <button class="btn func">%</button>
+
+            <button class="btn num" onclick="saludar()">7</button>
+            <button class="btn num" onclick="saludarPersona('Burcu')">8</button>
+            <button class="btn num" onclick="saludarPersona2('Albert')">9</button>
+            <button class="btn operator">/</button>
+
+            <button class="btn num" onclick="deletrejar()">4</button>
+            <button class="btn num" onclick="esParell()">5</button>
+            <button class="btn num" onclick="nota(nota)">6</button>
+            <button class="btn operator">*</button>
+
+            <button class="btn num" onclick="compteEnrera()">1</button>
+            <button class="btn num" onclick="sumar()">2</button>
+            <button class="btn num" onclick="sumar2(6,7) ">3</button>
+            <button class="btn operator">-</button>
+
+            <button class="btn num" onclick="sumar3(11,15)">0</button>
+            <button class="btn">.</button>
+            <button class="btn operator">=</button>
+            <button class="btn operator">+</button>
+        </div>
+    </div>
+    <div id="mensaje"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
